@@ -2,7 +2,7 @@
 	"name": "babjeeadf",
 	"properties": {
 		"globalConfigurations": {
-			"PolicyValidationEnabled": "true"
+			"PolicyValidationEnabled": "false"
 		}
 	},
 	"location": "southindia"
