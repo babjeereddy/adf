@@ -1,0 +1,26 @@
+{
+	"name": "csv_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat('Sedon_' ,startOfMonth(utcNow(),'DDMMYYYYHH24MI'),'.csv')",
+					"type": "Expression"
+				},
+				"container": "dynamic"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
