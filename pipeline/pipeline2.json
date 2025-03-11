@@ -15,6 +15,14 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataflow": {
+						"referenceName": "dataflow1",
+						"type": "DataFlowReference",
+						"parameters": {
+							"df_p1": "\"This is data flow parameter\"",
+							"df_p2": "\"This is data flow variable\""
+						}
+					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
