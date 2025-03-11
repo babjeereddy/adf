@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@concat('Sedon_' ,startOfMonth(utcNow(),'DDMMYYYYHH24MI'),'.csv')",
+					"value": "@concat('Sedon_' ,formatDateTime(utcNow(),'ddMMyyyyHH24MI'),'.csv')",
 					"type": "Expression"
 				},
 				"container": "dynamic"
