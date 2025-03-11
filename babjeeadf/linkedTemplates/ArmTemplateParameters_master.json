@@ -5,6 +5,27 @@
 		"factoryName": {
 			"value": "babjeeadf"
 		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"blobstorage_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "babjeesql.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "demodb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "babjee"
+		},
+		"Trigger_869_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_869_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
 		"containerUri": {
 			"value": ""
 		},
