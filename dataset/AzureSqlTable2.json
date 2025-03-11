@@ -7,7 +7,32 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "Make",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Model",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Origin",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DriveTrain",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Length",
+				"type": "nvarchar"
+			}
+		],
 		"typeProperties": {
 			"schema": "dbo",
 			"table": "Wago"
