@@ -19,8 +19,14 @@
 						"referenceName": "dataflow1",
 						"type": "DataFlowReference",
 						"parameters": {
-							"df_p1": "\"This is data flow parameter\"",
-							"df_p2": "\"This is data flow variable\""
+							"df_p1": {
+								"value": "'@{pipeline().parameters.pl_parameter}'",
+								"type": "Expression"
+							},
+							"df_p2": {
+								"value": "'@{variables('pl_variable')}'",
+								"type": "Expression"
+							}
 						}
 					},
 					"compute": {

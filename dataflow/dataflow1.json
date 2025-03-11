@@ -28,7 +28,7 @@
 			],
 			"scriptLines": [
 				"parameters{",
-				"     df_p1 as string (\"This is data flow parameter\"),",
+				"     df_p1 as string (\"this df value\"),",
 				"     df_p2 as string (\"This is data flow variable\")",
 				"}",
 				"source(output(",
@@ -43,7 +43,7 @@
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     format: 'table') ~> source1",
-				"source1 derive(column1 = $df_p1,",
+				"source1 derive(column1 = ERROR_FUNCTION(''),",
 				"          column2 = $df_p2) ~> derivedColumn1",
 				"derivedColumn1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
